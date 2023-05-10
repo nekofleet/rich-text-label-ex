@@ -13,6 +13,7 @@ config_version=5
 config/name="RichTextLabelEx"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 run/low_processor_mode=true
+config/icon="res://icon.png"
 
 [rendering]
 
