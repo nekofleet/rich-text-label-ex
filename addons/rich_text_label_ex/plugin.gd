@@ -3,10 +3,12 @@ extends EditorPlugin
 
 
 func _enter_tree():
-	# Initialization of the plugin goes here.
-	pass
+	add_custom_type(
+		"RichTextLabelEx",
+		"RichTextLabel",
+		preload("rich_text_label_ex.gd"),
+		preload("RichTextLabelEx.svg"))
 
 
 func _exit_tree():
-	# Clean-up of the plugin goes here.
-	pass
+	remove_custom_type("RichTextLabelEx")
