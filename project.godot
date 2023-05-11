@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.0", "GL Compatibility")
 run/low_processor_mode=true
 config/icon="res://icon.png"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/rich_text_label_ex/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

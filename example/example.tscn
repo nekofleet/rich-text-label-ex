@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://bjyyeyci26dho"]
+[gd_scene load_steps=2 format=3 uid="uid://bjyyeyci26dho"]
+
+[ext_resource type="Script" path="res://addons/rich_text_label_ex/rich_text_label_ex.gd" id="1_lmalq"]
 
 [node name="Example" type="Panel"]
 anchors_preset = 15
@@ -6,3 +8,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="RichTextLabelEx" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 24
+text = "[img]res://example/test_image@res.png[/img] This is an imported image from [color=pink]\"res://example/test_image@res.png\"[/color].
+[font_size=12] [/font_size]
+[img]user://test_image@user.png[/img] This is an external image at [color=pink]\"user://test_image@user.png\"[/color].
+[font_size=12] [/font_size]
+[img]E:/test_image@e.png[/img] This is an external image at [color=pink]\"E:/test_image@e.png\"[/color].
+[font_size=12] [/font_size]
+[img]test_images/test_image@dot.png[/img] This is an external image at [color=pink]\"test_images/test_image@dot.png\"[/color].
+[font_size=12] [/font_size]
+Please copy
+  from [color=pink]\"test_images/test_image@user.png\"[/color] to [color=pink]\"user://test_image@user.png\"[/color].
+  from [color=pink]\"test_images/test_image@e.png\"[/color] to [color=pink]\"E:/test_image@e.png\"[/color]."
+script = ExtResource("1_lmalq")
+bbcode_enabled_deferred = true
